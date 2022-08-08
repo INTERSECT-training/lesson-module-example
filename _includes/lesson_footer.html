@@ -25,6 +25,10 @@
 	{% elsif site.carpentry == "cp" %}
 	Licensed under <a href="{{ site.cc_by_human }}">CC-BY 4.0</a> 2018–{{ 'now' | date: "%Y" }}
 	by <a href="{{ site.carpentries_site }}">The Carpentries</a>
+	{% elsif site.carpentry == "int" %}
+	Licensed under <a href="{{ site.cc_by_human }}">CC-BY 4.0</a> 2022–{{ 'now' | date: "%Y" }}
+	by <a href="{{ site.intersect_site }}">The INTERSECT Project</a>
+	
 	{% endif %}
     </div>
     <div class="col-md-6 help-links" align="right">
@@ -42,7 +46,7 @@
 	/
 	<a href="{{ repo_url }}/blob/{{ source_branch }}/CITATION" data-checker-ignore>Cite</a>
 	/
-	<a href="mailto:{{ site.email }}">Contact</a>
+	<a href="{{ site.intersect_site }}/contact/">Contact</a>
     </div>
   </div>
   <div class="row">
